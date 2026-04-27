@@ -1,104 +1,132 @@
-# Infrastructure as Code Generator
+<div align="center">
 
-Generated production-grade Terraform for 30+ AWS patterns from natural language prompts
+![Header](https://capsule-render.vercel.app/api?type=soft&color=0:ffecd2,100:fcb69f&height=220&section=header&text=Infrastructure%20as%20Code%20Generator&fontSize=48&fontColor=fff&animation=twinkling&fontAlignY=38&desc=Generated%20production-grade%20Terraform%20for%2030%2B%20AWS%20patterns%20fr&descAlignY=56&descSize=13)
 
-## About
+<br/>
 
-Built natural language to Terraform generator producing production-grade AWS, GCP and Azure modules from prompts
+<img src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7ed2.gif" width="100" />
 
-Validated generated Terraform with tflint and checkov catching 95% of security misconfigs before apply
+<br/><br/>
 
-Supports VPC, ECS, RDS, S3, IAM and Lambda patterns with cost estimation via Infracost integration
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=7C3AED&center=true&vCenter=true&width=700&lines=Generated%20production-grade%20Terraform%20for%2030%2B%20AWS%20patterns%20fr" alt="Typing SVG" />
 
-## Tech Stack
+<br/>
 
-- Python
-- OpenAI
-- Terraform
-- FastAPI
+![Python](https://img.shields.io/badge/Python-3776AB&logo=python&style=for-the-badge&logoColor=white)  
+![OpenAI](https://img.shields.io/badge/OpenAI-412991&logo=openai&style=for-the-badge&logoColor=white)  
+![Terraform](https://img.shields.io/badge/Terraform-555555&style=for-the-badge&logoColor=white)  
+![FastAPI](https://img.shields.io/badge/FastAPI-009688&logo=fastapi&style=for-the-badge&logoColor=white)
 
-## Features
+&nbsp;&nbsp;[![License MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)&nbsp;&nbsp;[![Stars](https://img.shields.io/github/stars/alam025/iac-generator?style=for-the-badge&color=yellow)](https://github.com/alam025/iac-generator/stargazers)
 
-- Production-ready implementation with error handling and logging
-- Comprehensive documentation and code comments
-- Modular architecture following clean code principles
-- CI/CD ready with GitHub Actions workflow included
-- Environment-based configuration for dev/staging/prod
-
-## Getting Started
-
-### Prerequisites
-
-- Python
-- OpenAI
-- Terraform
-- FastAPI
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/alam025/iac-generator.git
-cd iac-generator
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Configure environment
-cp .env.example .env
-# Edit .env with your configuration
-
-# Run the application
-uvicorn main:app --reload
-```
-
-## Project Structure
-
-```
-iac-generator/
-├── src/                    # Source code
-│   ├── components/         # Reusable components
-│   ├── utils/              # Utility functions
-│   └── config/             # Configuration files
-├── tests/                  # Test suite
-├── docs/                   # Documentation
-├── .env.example            # Environment variable template
-├── .github/                # GitHub Actions workflows
-│   └── workflows/
-│       └── ci.yml
-└── README.md
-```
-
-## Key Implementation Highlights
-
-1. Built natural language to Terraform generator producing production-grade AWS, GCP and Azure modules from prompts
-2. Validated generated Terraform with tflint and checkov catching 95% of security misconfigs before apply
-3. Supports VPC, ECS, RDS, S3, IAM and Lambda patterns with cost estimation via Infracost integration
-
-## Performance Metrics
-
-- **Accuracy / Quality**: See benchmark results in `docs/benchmarks.md`
-- **Latency**: Optimized for production workloads
-- **Scalability**: Tested under concurrent load
-
-## Deployment
-
-This project is configured for deployment on **Render**.
-
-Detailed deployment instructions are available in `docs/deployment.md`.
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add your feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Open a Pull Request
-
-## License
-
-MIT License — see `LICENSE` for details.
+</div>
 
 ---
 
-*Built with Python, OpenAI, Terraform and 1 more*
+## 🚀 About
+
+> **Generated production-grade Terraform for 30+ AWS patterns from natural language prompts**
+
+**Infrastructure as Code Generator** is a production-ready **DevOps** project built with **Python, OpenAI, Terraform, FastAPI**.
+Deployed on **Render** with full CI/CD pipeline.
+
+---
+
+## ⚡ Architecture
+
+```mermaid
+graph TD
+    A[📝 Code Push] --> B[🔄 CI Pipeline]
+    B --> C[🧪 Tests]
+    C --> D[🐳 Docker Build]
+    D --> E[☸️ Kubernetes Deploy]
+    E --> F[🚀 Production]
+    style A fill:#ffecd2,color:#000
+    style D fill:#fcb69f,color:#000
+    style F fill:#ffecd2,color:#000
+```
+
+---
+
+## 📊 Performance
+
+<div align="center">
+
+| Metric | Value |
+|--------|-------|
+| **Domain** | DevOps |
+| **Stack** | Python, OpenAI, Terraform, FastAPI |
+| **Platform** | Render |
+| **Key Metric** | 30+ |
+
+</div>
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="45" height="45" alt="Python" title="Python" />&nbsp;&nbsp;<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" width="45" height="45" alt="FastAPI" title="FastAPI" />&nbsp;&nbsp;
+
+</div>
+
+---
+
+## 🚀 Quick Start
+
+```bash
+# 1. Clone
+git clone https://github.com/alam025/iac-generator.git
+cd iac-generator
+
+# 2. Install
+pip install -r requirements.txt
+
+# 3. Run
+python main.py
+```
+
+---
+
+## 📂 Project Structure
+
+```
+iac-generator/
+├── main.py (or src/)
+├── requirements.txt / package.json
+├── tests/
+├── .github/workflows/ci.yml
+├── .env.example
+└── README.md
+```
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repo
+2. Create branch: `git checkout -b feature/your-feature`
+3. Commit: `git commit -m 'Add your feature'`
+4. Push: `git push origin feature/your-feature`
+5. Open a Pull Request
+
+---
+
+## 📜 License
+
+MIT License — free for commercial and personal use.
+
+---
+
+<div align="center">
+
+<img src="https://user-images.githubusercontent.com/74038190/212257468-1e9a91f1-b626-4baa-b15d-5c385dfa7ed2.gif" width="60" />
+
+### ⭐ Star this repo if it helped you!
+
+[![Follow](https://img.shields.io/github/followers/alam025?style=for-the-badge&logo=github&label=Follow%20%40alam025)](https://github.com/alam025)
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:ffecd2,100:fcb69f&height=100&section=footer)
+
+</div>
